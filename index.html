@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>для алины ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+:root{--pink:#ff8fb5;--deep:#c94f82;--cream:#fff7fa}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:#75465a;background:radial-gradient(circle at 15% 10%,#ffe0eb 0,transparent 34%),radial-gradient(circle at 90% 80%,#ffd9e8 0,transparent 35%),linear-gradient(135deg,#fff8fb,#ffeaf2);font-family:Comfortaa, sans-serif;overflow-x:hidden}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.heart{position:absolute;top:-40px;color:#f48bb2;opacity:.65;animation:fall linear forwards;filter:drop-shadow(0 3px 5px #f7b2ca66)}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg);opacity:0}}
+main{position:relative;z-index:1;width:min(900px,92%);margin:0 auto;padding:54px 0 70px}
+.hero{text-align:center;padding:48px 22px 38px;background:#ffffffa8;border:1px solid #fff;box-shadow:0 18px 60px #d9789b20;border-radius:34px;backdrop-filter:blur(12px)}
+.eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#c87998}
+h1{font-family:'Playfair Display',serif;font-size:clamp(42px,8vw,76px);font-weight:500;line-height:1.08;margin:18px 0 14px;color:#b84d79}
+h1 span{font-style:italic;color:#ee8bad}
+.subtitle{font-size:14px;color:#a56d83}
+.big-heart{font-size:35px;display:inline-block;animation:pulse 1.4s infinite}
+@keyframes pulse{50%{transform:scale(1.2)}}
+.note{max-width:690px;margin:30px auto 0;padding:30px 28px;background:#fffafc;border-radius:26px;box-shadow:0 12px 35px #d9789b18;text-align:center;line-height:2;font-size:15px}
+.note p{margin:0}
+.note .signature{font-family:'Playfair Display',serif;font-size:27px;font-style:italic;color:#c65e88;margin-top:20px}
+.section-title{text-align:center;font-family:'Playfair Display',serif;font-size:34px;font-weight:500;color:#b84d79;margin:54px 0 22px}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.photo{margin:0;padding:10px 10px 16px;background:#fff;border-radius:20px;box-shadow:0 12px 30px #bd6c8b20;transform:rotate(var(--tilt));transition:transform .25s,box-shadow .25s}
+.photo:hover{transform:translateY(-6px) rotate(0deg);box-shadow:0 18px 38px #bd6c8b35}
+.photo img{display:block;width:100%;height:260px;object-fit:cover;border-radius:13px;background:linear-gradient(135deg,#ffe4ee,#fff5f8)}
+.photo figcaption{text-align:center;font-family:'Playfair Display',serif;font-style:italic;color:#bd6b8b;margin-top:12px;font-size:18px}
+.end{text-align:center;margin:54px 0 0;font-family:'Playfair Display',serif;font-size:clamp(25px,5vw,38px);font-style:italic;color:#c65e88}
+.end small{display:block;font:12px Comfortaa,sans-serif;letter-spacing:2px;margin-top:14px;color:#b78398}
+@media(max-width:560px){main{padding-top:22px}.hero{padding:38px 16px}.note{padding:24px 19px;font-size:13px}.gallery{gap:12px}.photo{padding:7px 7px 12px}.photo img{height:180px}.photo figcaption{font-size:15px}.section-title{margin-top:42px}}
+</style>
+</head>
+<body>
+<div id="hearts"></div>
+<main>
+  <header class="hero">
+    <div class="eyebrow">маленькая страничка только для тебя</div>
+    <h1>Алина <span>♡</span></h1>
+    <div class="big-heart">💗</div>
+    <div class="subtitle">ты делаешь мой мир намного красивее</div>
+  </header>
+
+  <section class="note">
+    <p>алина я даже не знаю как объяснить насколько сильно ты мне дорога</p>
+    <p>мне нравится в тебе абсолютно всё и каждый раз когда я думаю о тебе у меня появляется улыбка</p>
+    <p>ты тот человек рядом с которым хочется быть настоящим делиться всем и просто проводить время вместе</p>
+    <p>я хочу чтобы ты всегда помнила что ты особенная для меня и что я очень сильно тебя люблю</p>
+    <p>спасибо тебе за твою улыбку за твой голос за твою нежность и за то что ты есть в моей жизни</p>
+    <p>я бы выбирал тебя снова и снова</p>
+    <div class="signature">твой степкаа ♡</div>
+  </section>
+
+  <h2 class="section-title">моменты которые хочется сохранить</h2>
+  <section class="gallery">
+    <figure class="photo" style="--tilt:-2deg"><img src="png.5201.png" alt="ванючие"></figure>
+    <figure class="photo" style="--tilt:2deg"><img src="png.5202.png" alt="казявчатые"></figure>
+    <figure class="photo" style="--tilt:1.5deg"><img src="png.5203.png" alt="глупые"></figure>
+    <figure class="photo" style="--tilt:-1.5deg"><img src="png.5204.png" alt="ванючие"></figure>
+  </section>
+
+  <div class="end">я очень сильно тебя люблю алина <span>♡</span><small>очееен</small></div>
+</main>
+<script>
+const layer=document.getElementById('hearts');
+const symbols=['♡','♥','💕','💗','❤'];
+function makeHeart(){
+  const el=document.createElement('span');
+  el.className='heart';
+  el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+  el.style.left=Math.random()*100+'vw';
+  el.style.fontSize=(13+Math.random()*23)+'px';
+  const duration=5+Math.random()*7;
+  el.style.animationDuration=duration+'s';
+  el.style.opacity=.25+Math.random()*.55;
+  layer.appendChild(el);
+  setTimeout(()=>el.remove(),duration*1000);
+}
+setInterval(makeHeart,260);
+for(let i=0;i<18;i++)setTimeout(makeHeart,i*130);
+</script>
+</body>
+</html>
